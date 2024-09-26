@@ -1,0 +1,115 @@
+/* Alerts.module.css */
+
+.container {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4; /* Light background color for the container */
+}
+
+.heading {
+  margin-bottom: 40px; /* Spacing below heading */
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.filterContainer {
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Space between filter elements */
+  padding: 0 10px; /* Added padding for better spacing */
+}
+
+.filter {
+  padding: 12px 20px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  background-color: #fff; /* White background for filters */
+  color: #333;
+  transition: background-color 0.3s ease, border-color 0.3s ease; /* Added transition for smoother hover effect */
+}
+
+.filter:hover {
+  background-color: #e0e0e0;
+  border-color: #888;
+}
+
+
+.alertGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the alert cards horizontally */
+  gap: 20px; /* Space between alert cards */
+  padding: 0 10px; /* Padding for consistent spacing */
+}
+
+.alertCard {
+  background-color: #dceac8;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Slightly enhanced shadow */
+  flex: 1 1 30%; /* Basis for each card */
+  max-width: 30%; /* Ensure cards don't exceed this width */
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 20px; /* Space below each card */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Ensure proper alignment for the last card */
+.alertCard:nth-child(3n) {
+  margin-right: 0;
+}
+
+.alertCard:hover {
+  transform: scale(1.05); /* Slightly larger zoom effect */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.alertCard h3 {
+  margin-top: 0;
+  color: #D84315;
+}
+
+.alertCard p {
+  margin: 10px 0; /* Consistent margin for paragraph elements */
+  color: #555; /* Slightly lighter color for readability */
+}
+
+.alertContent {
+  display: flex;
+  align-items: center;
+}
+.alertImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 8px;
+  margin-right: 20px;
+}
+.alertInfo {
+  flex: 1;
+}
+@media (max-width: 1200px) {
+  .alertCard {
+    flex: 1 1 45%; /* Adjust width for medium screens */
+    max-width: 45%; /* Ensure cards don't exceed this width */
+  }
+}
+
+@media (max-width: 768px) {
+  .alertCard {
+    flex: 1 1 100%; /* Full width for small screens */
+    max-width: 100%; /* Ensure cards don't exceed this width */
+  }
+}
+.mapContainer {
+  margin: 20px 0; /* Add margin for spacing */
+}
+
+.map {
+  height: 400px; /* Set a fixed height for the map */
+  width: 100%; /* Full width for responsiveness */
+  border-radius: 8px; /* Rounded corners for a modern look */
+}

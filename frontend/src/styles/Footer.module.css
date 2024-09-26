@@ -1,0 +1,74 @@
+.footer {
+  background-color: #333;
+  color: white;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.footerContent {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.section {
+  flex: 1;
+  min-width: 200px;
+  margin: 10px 20px;
+}
+
+.section h4 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #66BB6A;
+  padding-bottom: 5px;
+}
+
+.section p, .section ul {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.section ul li {
+  margin: 10px 0;
+}
+
+.section ul li a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.section ul li a:hover {
+  color: #66BB6A;
+}
+
+.socialMedia {
+  margin-bottom: 20px;
+}
+
+.socialMedia a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+  transition: color 0.3s;
+}
+
+.socialMedia a:hover {
+  color: #66BB6A;
+}
+
+.copy {
+  font-size: 0.9rem;
+  margin-top: 20px;
+  border-top: 1px solid #666;
+  padding-top: 10px;
+}

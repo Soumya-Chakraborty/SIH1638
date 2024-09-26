@@ -1,0 +1,63 @@
+/* Community.module.css */
+
+.container {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.heading {
+  margin-bottom: 30px;
+  font-size: 2.5rem;
+}
+
+.postsList {
+  margin-bottom: 40px;
+}
+
+.postItem {
+  background-color: #E3F2FD;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.postItem h3 {
+  margin-top: 0;
+  color: #1976D2;
+}
+
+.postDate {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.newPost {
+  background-color: #F1F8E9;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.newPost h3 {
+  margin-top: 0;
+  color: #4CAF50;
+}
+
+.newPost textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  margin-bottom: 20px;
+}
+
+.newPost button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}

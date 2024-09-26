@@ -1,0 +1,229 @@
+.container {
+  padding: 2rem;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.infoSection {
+  margin-bottom: 2rem;
+}
+
+.textWithImage {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.textSection {
+  flex: 1;
+}
+
+.subheading {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.faqSection {
+  margin-top: 3rem;
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.faqHeading {
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #333;
+}
+
+.faqItem {
+  position: relative;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding: 1rem;
+  padding-right: 2rem; /* Add space for indicator */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.faqItem:last-child {
+  border-bottom: none;
+}
+
+.faqItem:hover {
+  background-color: #f7f7f7;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.faqQuestion {
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #0070f3;
+  margin-right: 2rem; 
+}
+
+.faqQuestion:hover {
+  color: #005bb5;
+  background-color: #e6f0ff;
+}
+
+.faqAnswer {
+  max-height: 0;
+  overflow: hidden;
+  margin-top: 0.5rem;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+  padding-left: 1rem;
+  border-left: 4px solid #0070f3;
+  transition: max-height 0.5s ease, padding-top 0.5s ease;
+}
+
+.faqAnswer.open {
+  max-height: 200px; 
+  padding-top: 1rem;
+}
+
+.faqIndicator {
+  position: absolute;
+  right: 1rem; 
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #0070f3;
+  transition: transform 0.3s ease;
+}
+
+.faqAnswer.open ~ .faqIndicator {
+  transform: translateY(-50%) rotate(45deg); 
+}
+
+@media (max-width: 768px) {
+  .faqQuestion {
+    font-size: 18px;
+  }
+
+  .faqAnswer {
+    font-size: 14px;
+  }
+}
+
+.resourceGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+/* Existing styles... */
+
+.resourceCard {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+.resourceCard:hover {
+  transform: scale(1.05); /* Slightly enlarge the card */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Add a more prominent shadow */
+  background-color: #f1f1f1; /* Slightly change background color */
+}
+
+.resourceCard h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+
+.resourceCard p {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.learnMoreLink {
+  margin-top: auto; 
+  font-size: 16px;
+  color: #0070f3;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.learnMoreLink:hover {
+  color: #005bb5; /* Darker color on hover */
+  text-decoration: underline; /* Underline on hover for better visibility */
+}
+
+/* Existing styles for other sections... */
+
+
+.videoSection {
+  margin-top: 2rem;
+}
+
+.videoGrid {
+  display: flex;
+  flex-wrap: wrap; /* Allow wrapping if necessary */
+  gap: 1.5rem; /* Space between video boxes */
+  justify-content: center; /* Center the boxes horizontally */
+}
+
+.videoCard {
+  flex: 1 1 20%; /* Allow cards to grow and shrink */
+  max-width: 300px; /* Limit the width of each card */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.videoCard:hover {
+  transform: scale(1.05); /* Slightly zoom in on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.videoLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.videoThumbnail {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.videoTitle {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 1rem 0;
+  color: #333;
+}
+
+.videoDescription {
+  font-size: 14px;
+  color: #555;
+  padding: 0 1rem;
+  margin-bottom: 1rem;
+}
+
+

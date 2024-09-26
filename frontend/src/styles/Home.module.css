@@ -1,0 +1,101 @@
+.container {
+  text-align: center;
+}
+
+.hero {
+  background-image: url('/images/img_bk.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: white;
+  padding:    100px 50px 50px; 
+  text-align: center;
+  height: calc(100vh - 50px);
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  color: white;
+}
+
+.heroBtn {
+  background-color: white;
+  color: #4CAF50;
+  padding: 15px 30px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.heroBtn:hover {
+  background-color: #F1F8E9;
+}
+
+.features {
+  margin-bottom: 50px;
+  font-size: 1.2em; 
+  line-height: 1.6; 
+  padding: 20px; 
+}
+
+.featureGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.featureItem {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 45%;
+  text-align: center;
+}
+
+.featureItem h3 {
+  margin-top: 0;
+}
+
+.featureImage {
+  width: 350px; /* Increased size */
+  height: 300px; /* Increased size */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  border-radius: 15px; /* Curved rectangular shape */
+  border: 2px solid #4CAF50; /* Green border */
+  margin: 0 auto 20px; /* Centers the image and adds space below */
+  display: block;
+}
+
+.newsletter {
+  background-color: #E8F5E9;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.newsletterForm {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.newsletterForm input {
+  padding: 10px;
+  border-radius: 5px 0 0 5px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.newsletterForm button {
+  border-radius: 0 5px 5px 0;
+  border: none;
+}
